@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Mesh backup 
+
+[Timer]
+OnCalendar=Wed,Fri *-*-* 01:38:00
+Persistent=true     
+Unit=backup.service
+ 
+[Install]
+WantedBy=timers.target

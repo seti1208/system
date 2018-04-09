@@ -1,0 +1,12 @@
+[Unit]
+Description=download content for 2m
+After=readIP.service
+
+[Service]
+Restart=on-failure
+RestartSec=360
+ExecStart=/opt/updater-spots
+
+[Install]
+WantedBy=multi-user.target
+
